@@ -46,17 +46,19 @@ export const Modal: React.FC<ModalProps> = ({
           onClick={onClose}
         />
         <div className={`relative w-full ${sizeClasses[size]} bg-white rounded-2xl shadow-2xl transform transition-all`}>
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            {title && <h3 className="text-xl font-semibold text-gray-900 font-linter">{title}</h3>}
+          <div className="flex flex-col items-center justify-center w-full p-6 border-b border-gray-200 bg-white/70 backdrop-blur-md rounded-t-2xl">
+            <img src="/web_logo.svg" alt="ADmyBRAND Logo" className="h-10 w-auto mb-2" />
+            <span className="text-lg font-semibold text-gray-900 font-linter mb-1">ADmyBRAND Demo</span>
+            <span className="text-sm text-gray-500">See our AI Suite in action</span>
             <Button
               variant="ghost"
               size="sm"
               onClick={onClose}
               icon={X}
-              className="!p-2"
+              className="!p-2 absolute top-4 right-4"
             />
           </div>
-          <div className="p-6">
+          <div className="p-0 sm:p-6">
             {children}
           </div>
         </div>

@@ -144,7 +144,7 @@ export const Features: React.FC = () => {
               summary: 'Discover the top trends and strategies for leveraging AI in your marketing campaigns this year.',
               link: '#'
             }, {
-              image: '/1728388533-zebra-1-3webp.jpg',
+              image: '/Fj64iuzWQAU4mWO.jpeg',
               title: 'Case Study: 300% ROI with ADmyBRAND',
               summary: 'See how a real business used our suite to triple their marketing ROI in just 6 months.',
               link: '#'

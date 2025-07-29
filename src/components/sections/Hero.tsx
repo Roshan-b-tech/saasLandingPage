@@ -105,7 +105,7 @@ export const Hero: React.FC = () => {
       <Modal isOpen={isDemoOpen} onClose={() => setIsDemoOpen(false)} title="ADmyBRAND Demo" size="xl">
         <div className="aspect-w-16 aspect-h-9 w-full">
           <video controls className="w-full h-full rounded-xl">
-            <source src="/14081587_1920_1080_60fps.mp4" type="video/mp4" />
+            <source src="/700_F_513966423_FxXbW0RjXoBV7e5Fpxmi0GnLF5xrzxIx_ST.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
