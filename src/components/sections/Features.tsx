@@ -1,55 +1,45 @@
 import React from 'react';
 import { Card } from '../ui/Card';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
-import {
-  Brain,
-  Target,
-  BarChart3,
-  Zap,
-  MessageSquare,
-  Globe,
-  Palette,
-  TrendingUp
-} from 'lucide-react';
 
 const features = [
   {
-    icon: Brain,
+    image: '/download.jpeg',
     title: 'AI Content Generation',
     description: 'Generate high-converting ad copy, blog posts, and social media content in seconds with our advanced AI models.'
   },
   {
-    icon: Target,
+    image: '/audience.jpeg',
     title: 'Smart Audience Targeting',
     description: 'Identify and reach your ideal customers with precision using AI-powered audience analysis and segmentation.'
   },
   {
-    icon: BarChart3,
+    image: '/PRED.jpeg',
     title: 'Predictive Analytics',
     description: 'Forecast campaign performance and optimize your marketing spend with machine learning insights.'
   },
   {
-    icon: Zap,
+    image: '/AB_TESTING.jpg',
     title: 'Automated A/B Testing',
     description: 'Run intelligent A/B tests that automatically optimize for your best-performing variations.'
   },
   {
-    icon: MessageSquare,
+    image: '/CHATBOT.jpeg',
     title: 'AI Chatbot Integration',
     description: 'Deploy conversational AI that nurtures leads and provides 24/7 customer support across all channels.'
   },
   {
-    icon: Globe,
+    image: '/MULTI.png',
     title: 'Multi-Platform Management',
     description: 'Manage campaigns across Facebook, Google, LinkedIn, and more from a single, unified dashboard.'
   },
   {
-    icon: Palette,
+    image: '/ASSET.jpeg',
     title: 'Creative Asset Generator',
     description: 'Create stunning visuals, videos, and graphics tailored to your brand with AI-powered design tools.'
   },
   {
-    icon: TrendingUp,
+    image: '/ROI.jpeg',
     title: 'ROI Optimization',
     description: 'Maximize your return on investment with real-time optimization algorithms that adapt to market changes.'
   }
@@ -105,8 +95,12 @@ export const Features: React.FC = () => {
                 className="text-center group px-4 py-6 sm:px-6 sm:py-8"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto">
-                  <feature.icon className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto">
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-16 h-16 object-contain"
+                  />
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 font-linter">
                   {feature.title}
