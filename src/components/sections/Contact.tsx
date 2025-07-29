@@ -121,7 +121,7 @@ export const Contact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="p-8 rounded-2xl border border-gray-200 bg-transparent">
+            <div className="p-8 rounded-2xl bg-transparent">
               <h3 className="text-2xl font-bold text-[#151515] mb-6 font-linter">Let's Talk</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
@@ -159,7 +159,7 @@ export const Contact: React.FC = () => {
             {/* Removed Why Choose ADmyBRAND card */}
           </div>
           {/* Contact Form */}
-          <div className="p-8 rounded-2xl border border-gray-200 bg-transparent">
+          <div className="p-8 rounded-2xl bg-transparent">
             {isSubmitted ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
