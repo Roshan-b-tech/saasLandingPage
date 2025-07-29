@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ zIndex: 0 }}
       >
-        <source src="/14081587_1920_1080_60fps.mp4" type="video/mp4" />
+        <source src="/7606283-hd_1080_1920_30fps.mp4" type="video/mp4" />
       </video>
 
       {/* Background Effects */}
