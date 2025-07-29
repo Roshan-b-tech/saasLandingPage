@@ -14,7 +14,7 @@ const features = [
     description: 'Identify and reach your ideal customers with precision using AI-powered audience analysis and segmentation.'
   },
   {
-    image: '/PRED.jpeg',
+    image: '/PREDC.jpeg',
     title: 'Predictive Analytics',
     description: 'Forecast campaign performance and optimize your marketing spend with machine learning insights.'
   },
