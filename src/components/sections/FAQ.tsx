@@ -1,6 +1,7 @@
 import React from 'react';
 import { Accordion, AccordionItem } from '../ui/Accordion';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
+// import { motion } from 'framer-motion'; // No longer needed here
 
 const faqs = [
   {
@@ -64,7 +65,6 @@ export const FAQ: React.FC = () => {
             Get answers to common questions about ADmyBRAND AI Suite
           </p>
         </div>
-
         <Accordion allowMultiple>
           {faqs.map((faq, index) => (
             <AccordionItem key={index} title={faq.question}>

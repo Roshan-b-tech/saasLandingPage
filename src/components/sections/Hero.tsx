@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
-import { Play, ArrowRight, Sparkles } from 'lucide-react';
-import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { Modal } from '../ui/Modal';
+import { ArrowRight, Sparkles, BookOpen } from 'lucide-react';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 export const Hero: React.FC = () => {
   const heroRef = useScrollAnimation('animate-fade-in-up');
@@ -78,10 +78,9 @@ export const Hero: React.FC = () => {
             variant="outline"
             size="lg"
             className="text-lg px-6 py-3 border-white/30 text-white hover:bg-white/10 w-full sm:w-auto"
-            icon={Play}
-            onClick={() => setIsDemoOpen(true)}
+            icon={BookOpen}
           >
-            Watch Demo
+            Read the docs
           </Button>
         </div>
 

@@ -156,29 +156,8 @@ export const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="p-8 rounded-2xl border border-gray-200 bg-transparent">
-              <h3 className="text-xl font-bold text-[#151515] mb-4 font-linter">Why Choose ADmyBRAND?</h3>
-              <ul className="space-y-3 text-[#5F5F64]">
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary-400 rounded-full" />
-                  <span>Proven 300% ROI increase</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary-400 rounded-full" />
-                  <span>10,000+ satisfied customers</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary-400 rounded-full" />
-                  <span>24/7 AI-powered support</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary-400 rounded-full" />
-                  <span>14-day free trial</span>
-                </li>
-              </ul>
-            </div>
+            {/* Removed Why Choose ADmyBRAND card */}
           </div>
-
           {/* Contact Form */}
           <div className="p-8 rounded-2xl border border-gray-200 bg-transparent">
             {isSubmitted ? (
